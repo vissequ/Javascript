@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Word Replacer",
+  "version": "1.0",
+  "description": "Replace occurrences of specified words with alternatives.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
